@@ -2,7 +2,7 @@
 
 ## Basic and Assembly Tips &amp; Trick code
 
-Here you can find some basic and assembly tips and trick code for Commodore 64.
+[Here](https://github.com/gfazioli/commodore-64/wiki) you can find some basic and assembly tips and trick code for Commodore 64.
 
   <img src="https://github.com/gfazioli/commodore-64/blob/main/images/Immagine.jpeg" alt="Commodore 64" width="300px" />
 
