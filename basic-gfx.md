@@ -49,4 +49,4 @@ Below the version without any special char. Just to be sure that you will be abl
 
 In the video below the effect is shown with the special char.
 
-<video src="images/typewriter.mov"></video>
+<video width="300px" src="images/typewriter.mov"></video>
