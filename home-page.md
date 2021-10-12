@@ -1,10 +1,8 @@
 # Welcome to the Commodore-64 Tips & Tricks!
 
-## Original photos	
+## Original photos
 
 <img src="images/photo-1.jpeg" alt="photo-1" width="200px" /><img src="images/photo-2.jpeg" alt="photo-2" width="200px" />
-
-
 
 ## Emulator
 
