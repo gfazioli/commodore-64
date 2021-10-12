@@ -1,0 +1,97 @@
+# DISABLE RUN/STOP
+
+```basic
+POKE 788,52
+```
+
+# ENABLE RUN/STOP
+
+```basic
+POKE 788,49
+```
+
+# DISABLE RUN/STOP + RESTORE
+
+```basic
+POKE 809,255
+```
+
+# DISABLE LIST
+
+```basic
+POKE 775,200
+```
+
+# CHANGE COMMAND "LIST" IN "SHOW"
+
+First of all, we're going to copy the ROM to a writable RAM.
+
+```basic
+10 FORN N = 40960 TO 49151
+20 POKE N, PEEK(N):NEXT
+```
+
+That's will take a while. Now you can free the RAM
+
+```basic
+POKE 1,54
+```
+
+Now, we're goinf to change command "LIST"
+
+```basic
+100 POKE 41229,83:POKE 41230,72:POKE 41231,79:POKE 41232,215
+```
+
+# RUN/STOP + RESTORE AND SPACE BAR EFFECT
+
+```basic
+POKE 648,4
+```
+
+Use the below to reset
+
+```basic
+POKE 648,4
+```
+
+# USEFUL SYS
+
+```basic
+SYS 65511 : REM CLOSE ALL FILES HANDLES
+SYS 65499 : REM SET THE CLOCK TO 0
+SYS 65514 : REM INCREMENT THE CLOCK
+SYS 64738 : REM RESTART THE SYSTEM
+SYS 64766 : REM RESTART
+SYS 58260 : REM RESTART
+```
+
+# KEY RESTORE
+
+```basic
+SYS 64759
+```
+
+Or
+
+```basic
+POKE 828,0:SYS 828
+```
+
+# RECOVER A LIST
+
+If you run a "NEW" command accidentally, you can recover the list by:
+
+```basic
+POKE 2050,1:SYS 42291:POKE 45, PEEK(34):POKE 46,PEEK(35):CLR
+```
+
+# MISCELLANEO SPECIAL EFFECT
+
+```basic
+POKE 192 - DATASETTE ENGINE
+PEEK 197 - KEY PRESSED VALUE
+PEEK 198 - KEYBOARD BUGGER VALUES
+PEEK 631-640 - KEYBOARD BUFFER FIFO MODE
+POKE 641-642 - LOW/HI OPERATION SYSTEM
+```
