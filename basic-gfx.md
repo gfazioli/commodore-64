@@ -31,7 +31,7 @@ Press `CTRL + ?`
 POKE 788,55 : REM OR POKE 788,60 OR 78 OR 77 OR 71 OR 72 OR 73
 ```
 
-## Typewriter effect
+## TYPEWRITER EFFECT
 
 Below the version without any special char. Just to be sure that you will be able to display the effect.
 
@@ -49,4 +49,4 @@ Below the version without any special char. Just to be sure that you will be abl
 
 In the video below the effect is shown with the special char.
 
-<video width="512px" controls src="images/typewriter.mov"></video>
+<video width="100%" controls src="images/typewriter.mov"></video>
